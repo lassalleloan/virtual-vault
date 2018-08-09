@@ -15,4 +15,4 @@ The ambition of this project is to create a program to archive and manage user a
 
 ## Relational model
 
-![relational model](images/relational_model.png)
+![Relational model](images/relational_model.png)
