@@ -15,4 +15,6 @@ The ambition of this project is to create a program to archive and manage user a
 
 ## Relational model
 
-![Relational model](images/relational_model.png)
+<p align="center">
+  <img src="./images/relational_model.png" alt="Relational model">
+</p>
