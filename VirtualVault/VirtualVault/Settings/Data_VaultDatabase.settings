@@ -1,0 +1,132 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualVault.Settings" GeneratedClassName="Data_VaultDatabase">
+  <Profiles />
+  <Settings>
+    <Setting Name="VaultDatabaseConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=(LocalDB)\v11.0;AttachDbFilename="|DataDirectory|\Vault Database\Database\Vault.mdf";Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="IsFirstLaunch" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.IsFirstLaunch".</Value>
+    </Setting>
+    <Setting Name="SaveUsnAndPwd" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.SaveUsnAndPwd".</Value>
+    </Setting>
+    <Setting Name="GetVaultID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetVaultID".</Value>
+    </Setting>
+    <Setting Name="CheckUsnAndPwd" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.CheckUsnAndPwd".</Value>
+    </Setting>
+    <Setting Name="CheckCategory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.CheckCategory".</Value>
+    </Setting>
+    <Setting Name="SaveCategory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.SaveCategory".</Value>
+    </Setting>
+    <Setting Name="GetVaultName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetVaultName".</Value>
+    </Setting>
+    <Setting Name="GetACardNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetACardNumber".</Value>
+    </Setting>
+    <Setting Name="GetScrNoteNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetScrNoteNumber".</Value>
+    </Setting>
+    <Setting Name="GetCategoryID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetCategoryID".</Value>
+    </Setting>
+    <Setting Name="UpdVaultName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.UpdVaultName".</Value>
+    </Setting>
+    <Setting Name="UpdateUsnAndPwd" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.UpdateUsnAndPwd".</Value>
+    </Setting>
+    <Setting Name="GetCategorieNameList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetCategorieNameList".</Value>
+    </Setting>
+    <Setting Name="DeleteCategory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.DeleteCategory".</Value>
+    </Setting>
+    <Setting Name="UpdateACardCategory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.UpdateACardCategory".</Value>
+    </Setting>
+    <Setting Name="UpdateScrNoteCategory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.UpdateScrNoteCategory".</Value>
+    </Setting>
+    <Setting Name="UpdateCategory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.UpdateCategory".</Value>
+    </Setting>
+    <Setting Name="SaveAuthenCard" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.SaveAuthenCard".</Value>
+    </Setting>
+    <Setting Name="GetACardShcList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetACardShcList".</Value>
+    </Setting>
+    <Setting Name="GetACardUsnList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetACardUsnList".</Value>
+    </Setting>
+    <Setting Name="CheckAuthenCard" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.CheckAuthenCard".</Value>
+    </Setting>
+    <Setting Name="UpdateAuthenCardData" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.UpdateAuthenCardData".</Value>
+    </Setting>
+    <Setting Name="DeleteAuthenCard" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.DeleteAuthenCard".</Value>
+    </Setting>
+    <Setting Name="GetACardNameList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetACardNameList".</Value>
+    </Setting>
+    <Setting Name="GetACardCpxFactorList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetACardCpxFactorList".</Value>
+    </Setting>
+    <Setting Name="GetACardIDList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetACardIDList".</Value>
+    </Setting>
+    <Setting Name="GetScrNoteBookmark" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetScrNoteBookmark".</Value>
+    </Setting>
+    <Setting Name="GetACardCrtDate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetACardCrtDate".</Value>
+    </Setting>
+    <Setting Name="GetACardChgDate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetACardChgDate".</Value>
+    </Setting>
+    <Setting Name="GetACardScrNoteList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetACardScrNoteList".</Value>
+    </Setting>
+    <Setting Name="GetACardCategory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetACardCategory".</Value>
+    </Setting>
+    <Setting Name="SaveScrNote" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.SaveScrNote".</Value>
+    </Setting>
+    <Setting Name="CheckScrNoteName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.CheckScrNoteName".</Value>
+    </Setting>
+    <Setting Name="UpdateScrNoteData" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.UpdateScrNoteData".</Value>
+    </Setting>
+    <Setting Name="DeleteScrNote" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.DeleteScrNote".</Value>
+    </Setting>
+    <Setting Name="GetScrNoteCategory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetScrNoteCategory".</Value>
+    </Setting>
+    <Setting Name="GetScrNoteCrtDate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetScrNoteCrtDate".</Value>
+    </Setting>
+    <Setting Name="GetScrNoteChgDate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetScrNoteChgDate".</Value>
+    </Setting>
+    <Setting Name="GetScrNoteNameList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetScrNoteNameList".</Value>
+    </Setting>
+    <Setting Name="GetScrNoteContentList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetScrNoteContentList".</Value>
+    </Setting>
+    <Setting Name="GetScrNoteIDList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "VaultDatabase.GetScrNoteIDList".</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

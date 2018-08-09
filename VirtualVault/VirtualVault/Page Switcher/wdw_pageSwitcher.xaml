@@ -1,0 +1,6 @@
+﻿<Window x:Name="wdw_pageSwitcherPageSwitcher" x:Class="VirtualVault.Page_Switcher.wdw_pageSwitcher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="wdw_pageSwitcher" Width="1200"  Height="720" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Closing="wdw_pageSwitcher_Closing" Icon="/VirtualVault;component/Icon/icon.ico">
+
+</Window>

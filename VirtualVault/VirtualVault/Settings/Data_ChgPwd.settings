@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualVault.Settings" GeneratedClassName="Data_ChgPwd">
+  <Profiles />
+  <Settings>
+    <Setting Name="ChgPwdTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Changement du mot de passe admisnitrateur</Value>
+    </Setting>
+    <Setting Name="IsPwdLengthInfSeven" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Le mot de passe doit être supérieur à 7 caractères.</Value>
+    </Setting>
+    <Setting Name="ArePasswordNotEqual" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Les mots de passe ne sont pas identiques.</Value>
+    </Setting>
+    <Setting Name="IsUsnAndPwdCheck" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">L'ancien mot de passe est incorrect.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

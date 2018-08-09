@@ -1,0 +1,33 @@
+﻿<UserControl x:Name="usc_chgPwdChgPwd" x:Class="VirtualVault.User_Controls.Change_Password.usc_chgPwd"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1200" KeyUp="usc_chgPwd_KeyUp" Loaded="usc_chgPwd_Loaded">
+    
+    <Grid x:Name="grd_chgPwdLayout" Background="White" d:IsLocked="True">
+
+        <!-- Message -->
+        <Label x:Name="lbl_message" Margin="300,214,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="600" Height="26" FontWeight="Bold" Foreground="Red" HorizontalContentAlignment="Center" d:IsLocked="True"/>
+
+        <!-- Old Password -->
+        <Label x:Name="lbl_oldPwd" Content="Ancien mot de passe" Margin="389,245,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="129" Height="26" d:IsLocked="True"/>
+        <PasswordBox x:Name="pwd_oldPwd" Margin="523,245,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Height="26" d:IsLocked="True"/>
+
+        <!-- New Password -->
+        <Label x:Name="lbl_newPwd_1" Content="Nouveau mot de passe" Margin="378,275,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="26" d:IsLocked="True"/>
+        <PasswordBox x:Name="pwd_newPwd_1" Margin="523,275,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Height="26" d:IsLocked="True"/>
+
+        <!-- Confirmation New Password -->
+        <Label x:Name="lbl_newPwd_2" Content="Confirmation du mot de passe" Margin="339,306,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="179" Height="26" d:IsLocked="True"/>
+        <PasswordBox x:Name="pwd_newPwd_2" Margin="523,305,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Height="26" d:IsLocked="True"/>
+
+        <!-- Save -->
+        <Button x:Name="cmd_save" Content="Enregistrer" Margin="827,577,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Height="22" Click="cmd_save_Click" d:IsLocked="True"/>
+
+        <!-- Cancel -->
+        <Button x:Name="cmd_cancel" Content="Annuler" Margin="952,577,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Height="22" Click="cmd_cancel_Click" d:IsLocked="True"/>
+
+    </Grid>
+</UserControl>

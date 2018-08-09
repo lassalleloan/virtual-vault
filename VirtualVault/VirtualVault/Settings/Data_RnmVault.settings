@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualVault.Settings" GeneratedClassName="Data_RnmVault">
+  <Profiles />
+  <Settings>
+    <Setting Name="RnmVaultTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Changement du nom du coffre-fort virtuel</Value>
+    </Setting>
+    <Setting Name="IsVltNameLength_Error" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Le nom du coffre-fort est incorrect.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

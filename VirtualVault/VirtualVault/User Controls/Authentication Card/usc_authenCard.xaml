@@ -1,0 +1,63 @@
+﻿<UserControl x:Name="usc_authenCardAuthenCard" x:Class="VirtualVault.User_Controls.Authentication_Card.usc_authenCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1200" Loaded="usc_authenCard_Loaded">
+    
+    <Grid x:Name="grd_authenCardLayout" Background="White" d:IsLocked="True">
+
+        <!-- Name -->
+        <Label x:Name="lbl_name" Content="Nom" Margin="240,62,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="26" d:IsLocked="True"/>
+        <TextBox x:Name="txt_name" Margin="360,62,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="46" TextWrapping="NoWrap" FontSize="24" MaxLength="30" d:IsLocked="True"/>
+
+        <!-- Shortcut -->
+        <Label x:Name="lbl_shortcut" Content="Site Internet" Margin="240,184,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Height="26" d:IsLocked="True"/>
+        <TextBox x:Name="txt_shortcut" Margin="360,184,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="26" TextWrapping="NoWrap" MaxLength="255" d:IsLocked="True"/>
+
+        <!-- Username -->
+        <Label x:Name="lbl_username" Content="Nom d'utilisateur" Margin="240,255,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Height="26" d:IsLocked="True"/>
+        <TextBox x:Name="txt_username" Margin="360,255,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="26" TextWrapping="NoWrap" d:IsLocked="True"/>
+
+        <!-- Password -->
+        <Label x:Name="lbl_password" Content="Mot de passe" Margin="240,286,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="26" d:IsLocked="True"/>
+        <TextBox x:Name="txt_password" Margin="360,286,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="26" TextWrapping="NoWrap" TextChanged="txt_password_TextChanged" d:IsLocked="True"/>
+
+        <!-- Complexity Factor -->
+        <Label x:Name="lbl_cpxFactor" Margin="665,286,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="26" d:IsLocked="True"/>
+        <Label x:Name="lbl_cpxCmt" Content="% efficace" Margin="710,286,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="26" d:IsLocked="True"/>
+
+        <!-- Generate Password -->
+        <Button x:Name="cmd_pwdGen" Content="Générer" Margin="785,286,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Height="26" Click="cmd_pwdGen_Click" d:IsLocked="True"/>
+
+        <!-- Secure Note -->
+        <Label x:Name="lbl_note" Content="Note" Margin="240,373,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="26" d:IsLocked="True"/>
+        <TextBox x:Name="txt_scrNote" Margin="360,373,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="150" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" d:IsLocked="True"/>
+
+        <!-- Creation Date -->
+        <Label x:Name="lbl_crtDate" Content="Date de création : " Margin="241,544,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Height="26" d:IsLocked="True"/>
+        <Label x:Name="lbl_crtDateValue" Margin="356,544,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="26" d:IsLocked="True"/>
+
+        <!-- Change Date -->
+        <Label x:Name="lbl_chgDate" Content="Date de modification : " Margin="241,575,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="26" d:IsLocked="True"/>
+        <Label x:Name="lbl_chgDateValue" Margin="376,575,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="26" d:IsLocked="True"/>
+
+        <!-- Category -->
+        <Label x:Name="lbl_category" Content="Catégories" Margin="752,184,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="26" d:IsLocked="True"/>
+        <ComboBox x:Name="cbo_category" Margin="827,184,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Height="26" d:IsLocked="True"/>
+
+        <!-- Bookmark -->
+        <CheckBox x:Name="chk_bmk" Content="Ajouter aux favoris" Margin="927,225,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="16" d:IsLocked="True"/>
+
+        <!-- Message -->
+        <Label x:Name="lbl_message" Margin="580,544,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="600" Height="26" FontWeight="Bold" Foreground="Red" HorizontalContentAlignment="Center" d:IsLocked="True"/>
+
+        <!-- Save -->
+        <Button x:Name="cmd_save" Content="Enregistrer" Margin="827,577,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Height="22" Click="cmd_save_Click" d:IsLocked="True"/>
+
+        <!-- Cancel -->
+        <Button x:Name="cmd_cancel" Content="Annuler" Margin="952,577,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Height="22" Click="cmd_cancel_Click" d:IsLocked="True"/>
+
+    </Grid>
+</UserControl>

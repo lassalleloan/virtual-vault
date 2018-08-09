@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualVault.Settings" GeneratedClassName="Data_AuthenCard">
+  <Profiles />
+  <Settings>
+    <Setting Name="IsACardDataNull" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Le nom de la fiche, le nom d'utilisateur ou le mot de passe n'a pas été saisi.</Value>
+    </Setting>
+    <Setting Name="IsAuthenCardExist" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Cette fiche d'authentification existe déjà.</Value>
+    </Setting>
+    <Setting Name="AuthenCardTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Fiche d'authentification</Value>
+    </Setting>
+    <Setting Name="DateTimeFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{0:yyyy-MM-dd}</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

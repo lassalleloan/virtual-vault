@@ -1,0 +1,41 @@
+﻿<Window x:Name="wdw_pwdGenPwdGen" x:Class="VirtualVault.User_Controls.Password_Generator.wdw_pwdGen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="wdw_pwdGen" Width="640" Height="320" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Closing="wdw_pwdGen_Closing" KeyUp="wdw_pwdGen_KeyUp" Loaded="wdw_pwdGen_Loaded" Icon="/VirtualVault;component/Icon/icon.ico">
+    
+    <Grid x:Name="grd_pwdGenLayout" Background="White" d:IsLocked="True">
+
+        <!-- Message -->
+        <Label x:Name="lbl_message" Margin="20,33,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="600" Height="26" FontWeight="Bold" Foreground="Red" HorizontalContentAlignment="Center" d:IsLocked="True"/>
+
+        <!-- Password -->
+        <Label x:Name="lbl_password" Content="Mot de passe" Margin="30,73,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Height="26" d:IsLocked="True"/>
+        <TextBox x:Name="txt_password" Margin="119,73,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="331" Height="26" TextWrapping="NoWrap" MaxLength="100" IsReadOnly="True" d:IsLocked="True"/>
+
+        <!-- Generate Password -->
+        <Button x:Name="cmd_generate" Content="Générer" Margin="455,73,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Height="26" Click="cmd_generate_Click" d:IsLocked="True"/>
+
+        <!-- Copy Password -->
+        <Button x:Name="cmd_copyPwd" Content="Copier" Margin="532,73,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Height="26" Click="cmd_copyPwd_Click" d:IsLocked="True"/>
+
+        <!-- ProgressBar Complexity-->
+        <Label x:Name="lbl_cpxCmt" Margin="415,117,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="99" Height="26" d:IsLocked="True"/>
+        <ProgressBar x:Name="pgr_cpx" Margin="217,117,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="26" Minimum="0" Maximum="100" d:IsLocked="True"/>
+
+        <!-- CheckBox -->
+        <CheckBox x:Name="chk_uprCase" Content="A - Z" Margin="250,161,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="16" IsChecked="True" d:IsLocked="True"/>
+        <CheckBox x:Name="chk_lwrCase" Content="a - z" Margin="250,182,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="16" IsChecked="True" d:IsLocked="True"/>
+        <CheckBox x:Name="chk_number" Content="0 - 9" Margin="334,161,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="16" IsChecked="True" d:IsLocked="True"/>
+        <CheckBox x:Name="chk_symbol" Content="! - @" Margin="334,182,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="16" IsChecked="True" d:IsLocked="True"/>
+
+        <!-- Password Length -->
+        <Label x:Name="lbl_pwdLength" Content="Nombre de caractères :" Margin="217,219,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Height="26" d:IsLocked="True"/>
+        <Label x:Name="lbl_nbrChar" Content="{Binding Value, ElementName=sld_pwdLength}" Margin="362,219,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="58" Height="26"
+			HorizontalContentAlignment="Center" d:IsLocked="True"/>
+        <Slider x:Name="sld_pwdLength" Margin="220,250,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="26" Minimum="8" Maximum="100" IsSnapToTickEnabled="True"
+                TickFrequency="1" IsMoveToPointEnabled="True" d:IsLocked="True"/>
+
+    </Grid>
+</Window>

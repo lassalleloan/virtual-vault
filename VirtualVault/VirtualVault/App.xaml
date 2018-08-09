@@ -1,0 +1,8 @@
+﻿<Application x:Class="VirtualVault.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="Page Switcher\wdw_pageSwitcher.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

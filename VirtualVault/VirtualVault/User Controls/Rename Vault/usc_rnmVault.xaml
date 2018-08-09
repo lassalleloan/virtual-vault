@@ -1,0 +1,24 @@
+﻿<UserControl x:Name="usc_rnmVaultRnmVault" x:Class="VirtualVault.User_Controls.Rename_Vault.usc_rnmVault"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1200" KeyUp="usc_rnmVault_KeyUp">
+    <Grid x:Name="grd_rnmVaultLayout" Background="White" d:IsLocked="True">
+
+        <!-- Message -->
+        <Label x:Name="lbl_message" Margin="300,219,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="600" Height="26" FontWeight="Bold" Foreground="Red" HorizontalContentAlignment="Center" d:IsLocked="True"/>
+
+        <!-- Name -->
+        <Label x:Name="lbl_name" Content="Nom" Margin="469,294,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="26" d:IsLocked="True"/>
+        <TextBox x:Name="txt_name" Margin="514,294,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Height="26" TextWrapping="NoWrap" MaxLength="30" d:IsLocked="True"/>
+
+        <!-- Save -->
+        <Button x:Name="cmd_save" Content="Enregistrer" Margin="827,577,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Height="22" Click="cmd_save_Click" d:IsLocked="True"/>
+
+        <!-- Cancel -->
+        <Button x:Name="cmd_cancel" Content="Annuler" Margin="952,577,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Height="22" Click="cmd_cancel_Click" d:IsLocked="True"/>
+
+    </Grid>
+</UserControl>

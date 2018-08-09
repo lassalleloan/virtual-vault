@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualVault.Settings" GeneratedClassName="Data_Category">
+  <Profiles />
+  <Settings>
+    <Setting Name="CategoryTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Catégorie</Value>
+    </Setting>
+    <Setting Name="IsCtgNameLength_Error" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Le nom de la catégorie est incorrecte.</Value>
+    </Setting>
+    <Setting Name="IsCategoryExist" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Cette catégorie existe déjà.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

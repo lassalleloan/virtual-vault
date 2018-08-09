@@ -1,0 +1,208 @@
+﻿<UserControl x:Name="usc_homeHome" x:Class="VirtualVault.User_Controls.Home_Interface.usc_home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1200">
+
+    <!-- Graphic Transformations -->
+    <UserControl.Resources>
+        <Storyboard x:Key="lbl_pwdGen_MouseEnter">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_pwdGen" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_pwdGen" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="lbl_pwdGen_MouseLeave">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_pwdGen" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_pwdGen" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="lbl_bmk_MouseEnter">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_bmk" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_bmk" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="lbl_bmk_MouseLeave">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_bmk" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_bmk" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="lbl_deconnection_MouseEnter">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_deconnection" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_deconnection" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="lbl_deconnection_MouseLeave">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_deconnection" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_deconnection" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="lbl_chgPwd_MouseEnter">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_chgPwd" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_chgPwd" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="lbl_chgPwd_MouseLeave">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_chgPwd" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="lbl_chgPwd" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00" Value="1.2"/>
+                <SplineDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="lbl_pwdGen">
+            <BeginStoryboard x:Name="lbl_pwdGen_MouseEnter_BeginStoryboard" Storyboard="{StaticResource lbl_pwdGen_MouseEnter}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="lbl_pwdGen">
+            <BeginStoryboard x:Name="lbl_pwdGen_MouseLeave_BeginStoryboard" Storyboard="{StaticResource lbl_pwdGen_MouseLeave}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="lbl_bmk">
+            <BeginStoryboard x:Name="lbl_bmk_MouseEnter_BeginStoryboard" Storyboard="{StaticResource lbl_bmk_MouseEnter}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="lbl_bmk">
+            <BeginStoryboard x:Name="lbl_bmk_MouseLeave_BeginStoryboard" Storyboard="{StaticResource lbl_bmk_MouseLeave}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="lbl_deconnection">
+            <BeginStoryboard x:Name="lbl_deconnection_MouseEnter_BeginStoryboard" Storyboard="{StaticResource lbl_deconnection_MouseEnter}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="lbl_deconnection">
+            <BeginStoryboard x:Name="lbl_deconnection_MouseLeave_BeginStoryboard" Storyboard="{StaticResource lbl_deconnection_MouseLeave}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseEnter" SourceName="lbl_chgPwd">
+            <BeginStoryboard x:Name="lbl_chgPwd_MouseEnter_BeginStoryboard" Storyboard="{StaticResource lbl_chgPwd_MouseEnter}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Mouse.MouseLeave" SourceName="lbl_chgPwd">
+            <BeginStoryboard x:Name="lbl_chgPwd_MouseLeave_BeginStoryboard" Storyboard="{StaticResource lbl_chgPwd_MouseLeave}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+
+    <Grid x:Name="grd_homeLayout" Background="White" d:IsLocked="True">
+
+        <!-- Separator -->
+        <Separator x:Name="spr_dynamicsControls" Margin="-30,65,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="580" Height="580" RenderTransformOrigin="0.5,0.5" d:IsLocked="True">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+
+        <!-- Vault -->
+        <Label x:Name="lbl_vltName" Content="vltName" Margin="20,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Height="26" MouseRightButtonUp="lbl_vltName_MouseRightButtonUp" FontWeight="Bold" d:IsLocked="True">
+            <Label.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Renommer" Click="MenuItem_RnmVault_Click" d:IsLocked="True"/>
+                </ContextMenu>
+            </Label.ContextMenu>
+        </Label>
+
+        <!-- Bookmark -->
+        <Label x:Name="lbl_bmk" Content="Favoris" Margin="20,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="26" MouseLeftButtonUp="lbl_bmk_MouseLeftButtonUp"  RenderTransformOrigin="1,1" d:IsLocked="True">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+    
+        <!-- Add Authencard -->
+        <Button x:Name="cmd_addACard" Content="+ Fiche" Margin="129,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="26" Click="cmd_addACard_Click" d:IsLocked="True"/>
+
+        <!-- Add ScrNote -->
+        <Button x:Name="cmd_addScrNote" Content="+ Note" Margin="184,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="26" Click="cmd_addScrNote_Click" d:IsLocked="True"/>
+
+        <!-- Category -->
+        <Label x:Name="lbl_category" Content="Catégories" Margin="20,171,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Height="26" d:IsLocked="True"/>
+
+        <!-- Add Category -->
+        <Button x:Name="cmd_addCategory" Content="+ Catégorie" Margin="129,171,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Height="26" Click="cmd_addCategory_Click" d:IsLocked="True"/>
+
+        <!-- Category Dynamics Controls -->
+        <ScrollViewer x:Name="scw_category" Margin="20,202,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Height="400" VerticalScrollBarVisibility="Auto" CanContentScroll="True" d:IsLocked="True">
+            <StackPanel x:Name="stp_category" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Height="400" d:IsLocked="True"/>
+        </ScrollViewer>
+
+        <!-- Number Item -->
+        <Label x:Name="lbl_itemNbr" Margin="20,650,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Height="26" d:IsLocked="True"/>
+
+        <!-- Generate Password -->
+        <Label x:Name="lbl_pwdGen" Content="Générer un mot de passe" Margin="1030,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="26"  MouseLeftButtonUp="lbl_pwdGen_MouseLeftButtonUp" RenderTransformOrigin="1,1" d:IsLocked="True">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+    
+        <!-- All Data Dynamics Control -->
+        <ScrollViewer x:Name="scw_allData" Margin="270,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="910" Height="522" VerticalScrollBarVisibility="Hidden" CanContentScroll="True" d:IsLocked="True">
+            <StackPanel x:Name="stp_allData" HorizontalAlignment="Left" VerticalAlignment="Top" Width="910" Height="522" d:IsLocked="True"/>
+        </ScrollViewer>
+
+        <!-- Change Password -->
+        <Label x:Name="lbl_chgPwd" Content="Changer votre mot de passe administrateur" Margin="835,650,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="240" Height="26" MouseLeftButtonUp="lbl_chgPwd_MouseLeftButtonUp" RenderTransformOrigin="1,1" d:IsLocked="True">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        
+        <!-- Deconnection -->
+        <Label x:Name="lbl_deconnection" Content="Déconnexion" Margin="1100,650,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Height="26" MouseLeftButtonUp="lbl_deconnection_MouseLeftButtonUp" RenderTransformOrigin="1,1" d:IsLocked="True">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+    
+    </Grid>
+</UserControl>

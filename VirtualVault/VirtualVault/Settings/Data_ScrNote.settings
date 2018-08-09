@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualVault.Settings" GeneratedClassName="Data_ScrNote">
+  <Profiles />
+  <Settings>
+    <Setting Name="ScrNoteTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Note sécurisée</Value>
+    </Setting>
+    <Setting Name="DateTimeFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{0:yyyy-MM-dd}</Value>
+    </Setting>
+    <Setting Name="IsScrNoteDataEmpty" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Le nom de la note sécurisée ou son contenu n'a pas été saisi.</Value>
+    </Setting>
+    <Setting Name="IsScrNoteAlreadyExist" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Cette note sécurisée existe déjà.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

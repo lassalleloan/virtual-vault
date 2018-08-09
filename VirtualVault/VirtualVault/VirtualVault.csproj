@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F028303A-EFA1-4F16-A78B-64FB54944A29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VirtualVault</RootNamespace>
+    <AssemblyName>VirtualVault</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publier\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cryptography\AESAlgorithm.cs" />
+    <Compile Include="Cryptography\HashAlgorithm.cs" />
+    <Compile Include="Settings\Data_AES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_AES.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Data_Authen.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_Authen.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Data_AuthenCard.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_AuthenCard.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Data_Category.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_Category.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Data_ChgPwd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_ChgPwd.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Data_Hash.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_Hash.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Data_Home.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_Home.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Data_PwdGen.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_PwdGen.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Data_RnmVault.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_RnmVault.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Data_ScrNote.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_ScrNote.settings</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Home Interface\Home_AuthenCard.cs" />
+    <Compile Include="User Controls\Home Interface\Home_Category.cs" />
+    <Compile Include="User Controls\Home Interface\Home_ScrNote.cs" />
+    <Compile Include="Settings\Data_VaultDatabase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Data_VaultDatabase.settings</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Home Interface\usc_home.xaml.cs">
+      <DependentUpon>usc_home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vault Database\VaultDatabase_AuthenCard_1.cs" />
+    <Compile Include="Vault Database\VaultDatabase_AuthenCard_2.cs" />
+    <Compile Include="Vault Database\VaultDatabase_Category.cs" />
+    <Compile Include="Vault Database\VaultDatabase_Authen.cs" />
+    <Compile Include="Vault Database\VaultDatabase.cs" />
+    <Compile Include="Vault Database\VaultDatabase_ScrNote_1.cs" />
+    <Compile Include="Vault Database\VaultDatabase_ScrNote_2.cs" />
+    <Compile Include="Vault Database\VaultDatabase_Vault.cs" />
+    <Compile Include="Page Switcher\Switcher.cs" />
+    <Compile Include="Page Switcher\wdw_pageSwitcher.xaml.cs">
+      <DependentUpon>wdw_pageSwitcher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Authentication Card\AuthenCard.cs" />
+    <Compile Include="User Controls\Authentication Card\usc_authenCard.xaml.cs">
+      <DependentUpon>usc_authenCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Authentication\Authen.cs" />
+    <Compile Include="User Controls\Authentication\usc_authen.xaml.cs">
+      <DependentUpon>usc_authen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Category\Category.cs" />
+    <Compile Include="User Controls\Category\usc_category.xaml.cs">
+      <DependentUpon>usc_category.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Change Password\ChgPwd.cs" />
+    <Compile Include="User Controls\Change Password\usc_chgPwd.xaml.cs">
+      <DependentUpon>usc_chgPwd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Home Interface\Home.cs" />
+    <Compile Include="User Controls\Password Generator\PwdGen.cs" />
+    <Compile Include="User Controls\Password Generator\wdw_pwdGen.xaml.cs">
+      <DependentUpon>wdw_pwdGen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Rename Vault\RnmVault.cs" />
+    <Compile Include="User Controls\Rename Vault\usc_rnmVault.xaml.cs">
+      <DependentUpon>usc_rnmVault.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Secure Note\ScrNote.cs" />
+    <Compile Include="User Controls\Secure Note\usc_scrNote.xaml.cs">
+      <DependentUpon>usc_scrNote.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Settings\Data_AES.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_AES.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\Data_Authen.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_Authen.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\Data_AuthenCard.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_AuthenCard.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\Data_Category.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_Category.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\Data_ChgPwd.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_ChgPwd.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\Data_Hash.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_Hash.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Settings\Data_Home.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_Home.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\Data_PwdGen.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_PwdGen.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\Data_RnmVault.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_RnmVault.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\Data_ScrNote.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_ScrNote.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Settings\Data_VaultDatabase.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Data_VaultDatabase.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="Page Switcher\wdw_pageSwitcher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Controls\Authentication Card\usc_authenCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Controls\Authentication\usc_authen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Controls\Category\usc_category.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Controls\Change Password\usc_chgPwd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Controls\Home Interface\usc_home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Controls\Password Generator\wdw_pwdGen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Controls\Rename Vault\usc_rnmVault.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="User Controls\Secure Note\usc_scrNote.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Vault Database\Database\Vault.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vault Database\Database\Vault_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Vault.mdf</DependentUpon>
+    </Content>
+    <Resource Include="Icon\Icon.ico" />
+    <Resource Include="Icon\Icon.png" />
+    <Content Include="Icon\Icon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

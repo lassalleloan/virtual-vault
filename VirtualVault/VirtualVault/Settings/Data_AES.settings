@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualVault.Settings" GeneratedClassName="Data_AES">
+  <Profiles />
+  <Settings>
+    <Setting Name="DecryptData" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "AESAlgorithm.DecryptData".</Value>
+    </Setting>
+    <Setting Name="EncryptData" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "AESAlgorithm.EncryptData".</Value>
+    </Setting>
+    <Setting Name="Salt" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GetKeyAndIV" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "AESAlgorithm.GetKeyAndIV".</Value>
+    </Setting>
+    <Setting Name="GetRandomSalt" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "AESAlgorithm.GetRandomSalt".</Value>
+    </Setting>
+    <Setting Name="IsDataLength_Error" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "AESAlgorithm.IsDataLength_Error".</Value>
+    </Setting>
+    <Setting Name="IsPwdLength_Error" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Une erreur s'est produite lors de l'accès à la méthode "AESAlgorithm.IsPwdLength_Error".</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

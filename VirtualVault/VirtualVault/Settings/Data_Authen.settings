@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualVault.Settings" GeneratedClassName="Data_Authen">
+  <Profiles />
+  <Settings>
+    <Setting Name="AddAuthenLabelPassword_2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Confirmation du mot de passe</Value>
+    </Setting>
+    <Setting Name="AuthenTitle" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Connexion</Value>
+    </Setting>
+    <Setting Name="IsUsnAndPwdEmpty" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Le nom d'utilisateur ou le mot de passe n'ont pas été saisi.</Value>
+    </Setting>
+    <Setting Name="IsPwdLengthInfSeven" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Le mot de passe doit être supérieur à 7 caractères.</Value>
+    </Setting>
+    <Setting Name="ArePasswordNotEqual" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Les mots de passe ne sont pas identiques.</Value>
+    </Setting>
+    <Setting Name="IsUsnAndPwdCheck" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Le nom d'utilisateur ou le mot de passe est incorrect.</Value>
+    </Setting>
+    <Setting Name="AllItem" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Tous les éléments</Value>
+    </Setting>
+    <Setting Name="Personnal" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Personnel</Value>
+    </Setting>
+    <Setting Name="Professional" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Professionnel</Value>
+    </Setting>
+    <Setting Name="Mailbox" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Messagerie Electronique</Value>
+    </Setting>
+    <Setting Name="SocialNetwork" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Réseaux Sociaux</Value>
+    </Setting>
+    <Setting Name="Bank" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Compte Bancaire</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
